@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+    <head> 
+		<meta charset="UTF-8">
+        <title> Info-Cursos </title>
+      	<link href="../css/stylecontactos.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body>
+
+	<header> 
+	
+		<div class="topnav">
+			<a href="#Registo" onclick= "openForm1()">Registo</a>
+			<a href="#Login" onclick="openForm()">Login</a>
+			<a id="topaj" href="#Ajuda">Ajuda Exemplo@gmail.com</a>
+        </div>
+
+		<div class="container">
+        	<div class="logo">
+			<img src="../imgs/iconpc.png" alt="pcicon">
+        	</div>
+
+        		<ul class="main-nav">
+               		<li><a href="index.html"> Home </a> </li>
+                	<li><a href="cursos.html"> Curso </a> </li>
+                	<li><a href="sobrenos.html"> Sobre nós </a> </li>
+                	<li><a href="faqs.html"> FAQS </a> </li>
+                	<li class="active"><a href="contactos.html"> Contactos </a> </li>
+        		</ul>
+
+		</div>
+		
+	</header>
+
+
+<div class="contact01">
+    <h1> INFORMAÇÃO DE CONTACTO</h1> 
+    <p>Estamos ao dispor para responder a qualquer dúvida.</p>
+</div>
+
+	<div class="row">
+        	<div class="logo2">
+			<img src="../imgs/icontmail2.png" alt="iconmail">   
+			</div>   
+	</div>
+
+	<div class="contact02">
+   	 <a href="email" style="text-decoration: none;">EXAMPLE@GMAIL.COM</a>
+	</div>
+
+	<div class="row01">
+		<div class="logo3">
+			<img src="../imgs/teleicon.png" alt ="teleicon">
+		</div>
+	</div>
+
+	<div class="contact03">
+		<p> (+351) 9x-xxx-xxx-x</p>
+	</div>
+
+	<div class="box01">
+		<h1>FORMULÁRIO DE CONTACTO</h1>
+		<p>Envia-nos a tua questão através do formulário em baixo.</p>
+	</div>
+
+		<form action="/formulario-de-ajuda" method="get">
+			<div>
+				<label> Nome </label>
+				<input type="text" name="Nome" />
+			</div>
+			<div>
+				<label> Email</label>
+				<input type="email" name="email"/>
+			</div>
+			<div>
+				<label>Mensagem</label>
+				<textarea id="msg"></textarea>
+			</div>
+
+			<div id="button">
+				<button class="btn active">Enviar sua mensagem</button>
+			</div>
+
+		</form>
+
+		<div class="form-popup" id="myForm">
+			<form action="" class="form-container">
+				  <h1>Login</h1>
+		  
+				  <label for="email"><b>Email</b></label>
+				  <input type="text" placeholder="Insira o Email" name="email" required>
+		  
+				  <label for="psw"><b>Password</b></label>
+				  <input type="password" placeholder="Insira a Password" name="psw" required>
+		  
+				  <button type="submit" class="btn">Login</button>
+				  <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+			</form>
+		  </div>
+  
+  
+		  <div class="form-popup1" id="myForm1">
+				  <form action="" class="form-container">
+					<h1>Registo</h1>
+			
+					<label for="email1"><b>Email</b></label>
+					<input type="text" placeholder="Insira o Email" name="email1" required>
+			
+					<label for="psw1"><b>Password</b></label>
+					<input type="password" placeholder="Insira a Password" name="psw2" required>
+  
+					<label for="psw1"><b>Password</b></label>
+					<input type="password" placeholder="Volte a inserir a password" name="psw3" required>
+			
+					<button type="submit" class="btn">Registar</button>
+					<button type="button" class="btn cancel" onclick="closeForm1()">Fechar</button>
+				  </form>
+			</div>
+ <script src="../javascript/javascontacto.js"></script>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head> 
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Info-Cursos </title>
+      <link href="../css/stylefaqs.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body>
+<script src="../javascript/javafaq.js"></script>
+<header> 
+	
+		<div class="topnav">
+			<a href="#Registo" onclick= "openForm1()">Registo</a>
+			<a href="#Login" onclick="openForm()">Login</a>
+			<a id="topaj" href="#Ajuda">Ajuda Exemplo@gmail.com</a>
+
+        </div>
+
+
+<div class="container">
+        <div class="logo">
+			<img src="../imgs/iconpc.png" alt="iconpc">
+        </div>
+		
+        <ul class="main-nav">
+		
+                <li class="active"><a href="index.html"> Home </a> </li>
+                <li><a href="cursos.html"> Curso </a> </li>
+                <li><a href="sobrenos.html"> Sobre nós </a> </li>
+                <li class="active"><a href="faqs.html"> FAQS </a> </li>
+                <li><a href="contactos.html"> Contactos </a> </li>
+
+        </ul>
+</div>		
+</header>
+<h1 class="parag">PERGUNTAS FREQUENTES</h1>
+<hr class="hrr">
+
+<div class="faqs">
+
+<div class="espaco">
+	<div class="conteudobox">
+		<div class ="label">Pergunta 1</div>
+		<div class="content">
+			<p>
+				Resposta 1
+			</p>
+
+		</div>
+		
+	</div>
+	<div class="conteudobox">
+		<div class ="label">Pergunta 2</div>
+		<div class="content">
+			<p>
+				Resposta 2, este aqui é a faq que vamos utilizar como exemplo,
+				como css html e javascript
+			</p>
+
+		</div>
+		
+	</div>
+
+	<div class="conteudobox">
+		<div class ="label">Pergunta 3</div>
+		<div class="content">
+			<p>
+				Resposta 3
+			</p>
+
+		</div>
+		
+	</div>
+	<div class="conteudobox">
+		<div class ="label">Pergunta 4</div>
+		<div class="content">
+			<p>
+				Resposta 4
+			</p>
+
+		</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div class="form-popup" id="myForm">
+	<form action="" class="form-container">
+	  <h1>Login</h1>
+  
+	  <label for="email"><b>Email</b></label>
+	  <input type="text" placeholder="Insira o Email" name="email" required>
+  
+	  <label for="psw"><b>Password</b></label>
+	  <input type="password" placeholder="Insira a Password" name="psw" required>
+  
+	  <button type="submit" class="btn">Login</button>
+	  <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+	</form>
+  </div>
+
+
+  <div class="form-popup1" id="myForm1">
+	  <form action="" class="form-container">
+		<h1>Registo</h1>
+	
+		<label for="email1"><b>Email</b></label>
+		<input type="text" placeholder="Insira o Email" name="email1" required>
+	
+		<label for="psw1"><b>Password</b></label>
+		<input type="password" placeholder="Insira a Password" name="psw2" required>
+
+		<label for="psw1"><b>Password</b></label>
+		<input type="password" placeholder="Volte a inserir a password" name="psw3" required>
+	
+		<button type="submit" class="btn">Registar</button>
+		<button type="button" class="btn cancel" onclick="closeForm1()">Fechar</button>
+	  </form>
+	</div>
+
+<script src="../javascript/javafaqs.js"></script>
+
+</body>
+</html>
